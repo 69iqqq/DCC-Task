@@ -6,4 +6,6 @@
 }
 .App {
     background-color: #fbf1c7;
+    width: 100%;
+    overflow: hidden;
 }
