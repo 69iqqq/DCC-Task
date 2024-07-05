@@ -9,7 +9,7 @@ function MemeCard(props) {
   const navigate = useNavigate();
   return (
     <Card
-      style={{ width: "11rem", borderRadius:"0px",margin: "-2px", backgroundColor: "#7c6f64", overflow:"hidden" }}
+      style={{ width: "13rem", borderRadius:"0px",margin: "-2px", backgroundColor: "#7c6f64", overflow:"hidden" }}
     >
       <Card.Img variant='top' src={props.img} style={{margin:"20px 20px 20px 0"}}/>
       <Card.Body style={{ borderRadius: "0px", margin: "-2px", backgroundColor: "#7c6f64" }}>
