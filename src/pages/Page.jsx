@@ -15,7 +15,7 @@ function Page() {
       <h1 className='text-center' style={{color:'#504945',marginTop:"50px"}}>Show Your Humor By Editing The Template</h1>
       <div
         ref={downloadRef}
-        style={{ width: "600px", border: "1px solid", margin: "auto" }}
+        style={{ width: "257px", margin: "auto" }}
         className='meme mt-5 mb-5'
       >
         <img src={params.get("url")} width='250px' />
@@ -48,8 +48,11 @@ function Page() {
         >
           Download
         </Button>
+        
       </div>
-      <div></div>
+      <div style={{ textAlign: "center" }}>
+        <span>Put the Text Only over the image</span>
+      </div>
     </div>
   );
 }

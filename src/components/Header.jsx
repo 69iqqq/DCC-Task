@@ -8,7 +8,7 @@ function Header() {
         justifyContent: "space-between",
       }}
     >
-      <img src='src/components/logo.png ' style={{ width: "50px" }} />
+      {/* <img src='src/components/logo.png ' style={{ width: "50px" }} /> */}
       <header
         style={{
           fontFamily: "poppins",
@@ -19,7 +19,7 @@ function Header() {
       >
        MEMEEEEEEEEAS
       </header>
-      <img src='src/components/react.svg ' style={{ width: "50px" }} />
+      {/* <img src='src/components/react.svg ' style={{ width: "50px" }} /> */}
     </div>
   );
 }
