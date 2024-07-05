@@ -1,3 +1,9 @@
 *{
     font-family: 'Poppins';
 }
+.body {
+    background-color: #888;
+}
+.App {
+    background-color: #fbf1c7;
+}

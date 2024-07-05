@@ -11,8 +11,8 @@ function Page() {
     setText(text + 1);
   };
   return (
-    <div style={{margin:"auto"}}>
-      <h1 className='text-center'>Show You Humor By Editing The Template</h1>
+    <div style={{ margin: "auto", backgroundColor:"#fbf1c7"}}>
+      <h1 className='text-center' style={{color:'#504945',marginTop:"50px"}}>Show Your Humor By Editing The Template</h1>
       <div
         ref={downloadRef}
         style={{ width: "600px", border: "1px solid", margin: "auto" }}
@@ -26,10 +26,24 @@ function Page() {
           ))}
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
-        <Button onClick={addText}>Add Text</Button>
+      <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginBottom:"50px" }}>
         <Button
-          variant='success'
+          style={{
+            backgroundColor: "#458588",
+            borderColor: "#458588",
+            color: "#504945",
+          
+          }}
+          onClick={addText}
+        >
+          Add Text
+        </Button>
+        <Button
+          style={{
+            backgroundColor: "#98971a",
+            borderColor: "#98971a",
+            color: "#504945",
+          }}
           onClick={() => exportComponentAsJPEG(downloadRef)}
         >
           Download

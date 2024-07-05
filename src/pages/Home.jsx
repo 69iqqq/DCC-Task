@@ -9,14 +9,14 @@ const Home = function () {
   }, []);
 
   return (
-    <>
-      <h1 className="text-center">Meme Generator</h1>
+    <div style={{backgroundColor:"#504945"}}>
+      
     <div className="row">
       {meme.map((el) => (
         <MemeCard img={el.blank} key={el.id} title={el.title} />
       ))}
     </div>
-      </>
+      </div>
   );
 };
 
