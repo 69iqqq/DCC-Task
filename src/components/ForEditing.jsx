@@ -49,7 +49,7 @@ function ForEditing() {
             onTouchStart={(e) => e.target.select()}
           />
         ) : (
-          <h1 className='white-font-with-black-boundary '>{text}</h1>
+            <h1 className='white-font-with-black-boundary '>{text}</h1>
         )}
       </div>
     </Draggable>

@@ -11,28 +11,40 @@ function Page() {
     setText(text + 1);
   };
   return (
-    <div style={{ margin: "auto", backgroundColor:"#fbf1c7"}}>
-      <h1 className='text-center' style={{color:'#504945',marginTop:"50px"}}>Show Your Humor By Editing The Template</h1>
+    <div style={{ margin: "auto", backgroundColor: "#fbf1c7" }}>
+      <h1
+        className='text-center'
+        style={{ color: "#504945", marginTop: "50px" }}
+      >
+        Show Your Humor By Editing The Template
+      </h1>
       <div
-        ref={downloadRef}
-        style={{ width: "257px", margin: "auto" }}
+        style={{ width: "257px", margin: "auto"}}
         className='meme mt-5 mb-5'
       >
-        <img src={params.get("url")} width='250px' />
-        {Array(text)
-          .fill(0)
-          .map((e) => (
-            <ForEditing key={e.index} />
-          ))}
+        <div ref={downloadRef}>
+          <img src={params.get("url")} width='250px' />
+          {Array(text)
+            .fill(0)
+            .map((e) => (
+              <ForEditing key={e.index} />
+            ))}
+        </div>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginBottom:"50px" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "10px",
+          marginBottom: "50px",
+        }}
+      >
         <Button
           style={{
             backgroundColor: "#458588",
             borderColor: "#458588",
             color: "#504945",
-          
           }}
           onClick={addText}
         >
@@ -48,10 +60,11 @@ function Page() {
         >
           Download
         </Button>
-        
       </div>
       <div style={{ textAlign: "center" }}>
-        <p>More than One text can be added and dragged any where in the image</p>
+        <p>
+          More than One text can be added and dragged any where in the image
+        </p>
         <span>Put the Text Only over the image</span>
       </div>
     </div>
