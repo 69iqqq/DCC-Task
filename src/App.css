@@ -18,3 +18,15 @@
         -1px 1px 0 black, 
         1px -1px 0 black;
 }
+/* App.css */
+.header{
+    
+          font-family: "poppins";
+          font-size: 50px;
+          color: #fbf1c7;
+          font-weight:bold;
+          text-align :center;
+          text-shadow: 4px ;
+        text-shadow: 2px 2px 4px #a89984;
+        
+}
