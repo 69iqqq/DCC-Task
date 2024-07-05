@@ -51,6 +51,7 @@ function Page() {
         
       </div>
       <div style={{ textAlign: "center" }}>
+        <p>More than One text can be added and dragged any where in the image</p>
         <span>Put the Text Only over the image</span>
       </div>
     </div>
