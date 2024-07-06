@@ -70,8 +70,8 @@ function ForEditing({ style }) {
   const [text, setText] = useState("Click on Me to Edit");
   const [textColor, setTextColor] = useState("#000000");
   const [fontSize, setFontSize] = useState(18);
-  const [rotation, setRotation] = useState(0); // Rotation state
-  const [sliderDragging, setSliderDragging] = useState(false); // State to track slider dragging
+  const [rotation, setRotation] = useState(0); 
+  const [sliderDragging, setSliderDragging] = useState(false); 
 
   const inputRef = useRef(null);
   const colorPickerRef = useRef(null);
@@ -84,7 +84,6 @@ function ForEditing({ style }) {
 
   const exitEditMode = () => {
     setInput(false);
-    // Replace newline characters with <br> tags for <h1> display
     setText(text.replace(/\n/g, "<br>"));
   };
 
@@ -101,7 +100,7 @@ function ForEditing({ style }) {
         value.substring(selectionEnd);
 
       setText(newValue);
-      e.preventDefault(); // Prevent default behavior (submitting form, in this case)
+      e.preventDefault(); 
     }
   }, []);
 
@@ -136,6 +135,7 @@ function ForEditing({ style }) {
   useEffect(() => {
     if (input && inputRef.current) {
       inputRef.current.focus();
+      inputRef.current.select();
     }
   }, [input]);
 
@@ -164,9 +164,9 @@ function ForEditing({ style }) {
                 fontSize: `${fontSize}px`,
                 fontWeight: "bold",
                 color: textColor,
-                width: "300px", // Adjust width as needed
-                resize: "none", // Disable resizing
-                transform: `rotate(${rotation}deg)`, // Apply rotation
+                width: "300px", 
+                resize: "none", 
+                transform: `rotate(${rotation}deg)`, 
               }}
             />
             <input
@@ -214,11 +214,11 @@ function ForEditing({ style }) {
               fontSize: `${fontSize}px`,
               fontFamily: "Poppins",
               fontWeight: "600",
-              transform: `rotate(${rotation}deg)`, // Apply rotation
+              transform: `rotate(${rotation}deg)`, 
             }}
             onClick={enterEditMode}
             onTouchStart={handleTouchStart}
-            dangerouslySetInnerHTML={{ __html: text }} // Render HTML to display <br> as line breaks
+            dangerouslySetInnerHTML={{ __html: text }} 
           />
         )}
       </div>
