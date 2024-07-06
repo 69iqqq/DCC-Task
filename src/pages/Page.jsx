@@ -20,7 +20,7 @@ function Page() {
       </h1>
       <div
         ref={downloadRef}
-        style={{ width: "257px", margin: "auto", border: "1px solid" }}
+        style={{ width: "257px", margin: "auto"}}
         className='meme mt-5 mb-5'
       >
         <img src={params.get("url")} width='250px' />

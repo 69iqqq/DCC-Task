@@ -118,9 +118,9 @@ function MemeCard(props) {
       style={{
         width: "12rem",
         height: "13rem",
-        borderRadius: "10px", // Border radius for the card
+        borderRadius: "10px", 
         border: "none",
-        margin: "6px", // Even margin around each card
+        margin: "6px", 
         backgroundColor: "#7c6f64",
         overflow: "hidden",
         position: "relative",
@@ -132,11 +132,11 @@ function MemeCard(props) {
           variant='top'
           src={props.img}
           style={{
-            width: "calc(100% - 20px)", // Account for padding
-            height: "calc(100% - 20px)", // Account for padding
+            width: "calc(100% - 20px)", 
+            height: "calc(100% - 20px)", 
             objectFit: "cover",
-            borderRadius: "10px", // Border radius for the image
-            margin: "10px", // Even margin around the image
+            borderRadius: "10px", 
+            margin: "10px", 
           }}
         />
         <p
