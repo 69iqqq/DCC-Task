@@ -154,7 +154,7 @@ function MemeCard(props) {
           }}
           onClick={(e) => navigate(`/edit?url=${props.img}`)}
         >
-          <EditIcon style={{ fontSize: "24px",  }} />
+          <EditIcon style={{ fontSize: "24px" }} />
         </p>
       </div>
     </Card>

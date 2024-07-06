@@ -23,14 +23,14 @@ function Page() {
         style={{ width: "257px", margin: "auto", border: "1px solid" }}
         className='meme mt-5 mb-5'
       >
-        
-          <img src={params.get("url")} width='250px' />
-          <div >{Array(text)
+        <img src={params.get("url")} width='250px' />
+        <div>
+          {Array(text)
             .fill(0)
             .map((e) => (
               <ForEditing key={e.index} />
-            ))}</div>
-        
+            ))}
+        </div>
       </div>
 
       <div
