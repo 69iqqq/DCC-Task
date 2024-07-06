@@ -49,7 +49,7 @@ function ForEditing(style) {
               autoFocus
               onClick={(e) => e.target.select()}
               onTouchStart={(e) => e.target.select()}
-              
+              style={{ border: "none", outline: "none", background:"transparent", fontSize:"18px", fontWeight:"bold"}}
             />
           </div>
         ) : (
