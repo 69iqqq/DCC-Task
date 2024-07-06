@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Draggable from "react-draggable";
-import "../../src/App.css"
+import "../../src/App.css";
+
 function ForEditing() {
   const [input, setInput] = useState(false);
   const [text, setText] = useState("Click on Me to Edit");
@@ -38,18 +39,20 @@ function ForEditing() {
         onTouchStart={handleTouchStart}
       >
         {input ? (
-          <input
-            ref={inputRef}
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            onBlur={exitEditMode}
-            onKeyDown={handleKeyDown}
-            autoFocus
-            onClick={(e) => e.target.select()}
-            onTouchStart={(e) => e.target.select()}
-          />
+          <div>
+            <input
+              ref={inputRef}
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              onBlur={exitEditMode}
+              onKeyDown={handleKeyDown}
+              autoFocus
+              onClick={(e) => e.target.select()}
+              onTouchStart={(e) => e.target.select()}
+            />
+          </div>
         ) : (
-            <h1 className='white-font-with-black-boundary '>{text}</h1>
+          <h1 className='white-font-with-black-boundary'>{text}</h1>
         )}
       </div>
     </Draggable>

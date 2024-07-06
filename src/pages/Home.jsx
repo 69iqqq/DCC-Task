@@ -9,14 +9,13 @@ const Home = function () {
   }, []);
 
   return (
-    <div style={{backgroundColor:"#504945"}}>
-      
-    <div className="row">
-      {meme.map((el) => (
-        <MemeCard img={el.blank} key={el.id} title={el.title} />
-      ))}
-    </div>
+    <div style={{ backgroundColor: "#7c6f64" }}>
+      <div className='row'>
+        {meme.map((el) => (
+          <MemeCard img={el.blank} key={el.id} title={el.title} />
+        ))}
       </div>
+    </div>
   );
 };
 

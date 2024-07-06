@@ -19,17 +19,18 @@ function Page() {
         Show Your Humor By Editing The Template
       </h1>
       <div
-        style={{ width: "257px", margin: "auto"}}
+        ref={downloadRef}
+        style={{ width: "257px", margin: "auto", border: "1px solid" }}
         className='meme mt-5 mb-5'
       >
-        <div ref={downloadRef}>
+        
           <img src={params.get("url")} width='250px' />
-          {Array(text)
+          <div >{Array(text)
             .fill(0)
             .map((e) => (
               <ForEditing key={e.index} />
-            ))}
-        </div>
+            ))}</div>
+        
       </div>
 
       <div
