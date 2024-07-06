@@ -160,7 +160,7 @@ function ForEditing({ style }) {
           </div>
         ) : (
           <h1
-            style={{ color: textColor, fontSize: `${fontSize}px` }}
+            style={{ color: textColor, fontSize: `${fontSize}px`, fontFamily:"Poppins", fontWeight:"600" }}
             onClick={enterEditMode}
           >
             {text}

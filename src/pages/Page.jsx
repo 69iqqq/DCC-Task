@@ -20,7 +20,7 @@ function Page() {
       </h1>
       <div
         ref={downloadRef}
-        style={{ width: "257px", margin: "auto"}}
+        style={{ width: "257px", margin: "auto" }}
         className='meme mt-5 mb-5'
       >
         <img src={params.get("url")} width='250px' />
@@ -64,7 +64,10 @@ function Page() {
       </div>
       <div style={{ textAlign: "center" }}>
         <p>
-          More than One text can be added and dragged any where in the image
+          More than One text can be added and dragged any where in the image &{" "}
+          <span style={{ backgroundColor: "#d3869b" }}>
+            ctrl+ArrowDown for color picker
+          </span>
         </p>
         <span>Put the Text Only over the image</span>
       </div>
