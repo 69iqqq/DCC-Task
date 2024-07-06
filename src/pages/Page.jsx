@@ -262,7 +262,7 @@ function Page() {
             borderColor: "#98971a",
             color: "#504945",
           }}
-          onClick={() => exportComponentAsJPEG(downloadRef)}  
+          onClick={() => exportComponentAsJPEG(downloadRef)}
         >
           Download
         </Button>
@@ -271,7 +271,6 @@ function Page() {
       <p>
         More than one text can be added and dragged anywhere on the image.
         <br />
-        Use{" "}
         <span
           style={{
             backgroundColor: "#d3869b",
@@ -279,9 +278,10 @@ function Page() {
             borderRadius: "3px",
           }}
         >
-          ctrl+ArrowDown
+          Make sure that nothing overlays the image because it is using useRef
+          to download <br/> the meme. If something overlays it, it will also get
+          downloaded, being overlaid.
         </span>{" "}
-        for the color picker.
       </p>
     </div>
   );
