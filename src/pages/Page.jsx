@@ -189,7 +189,7 @@ import ForEditing from "../components/ForEditing";
 import { exportComponentAsJPEG } from "react-component-export-image";
 
 function Page() {
-  const downloadRef = createRef(); // Create a ref to hold the component to be exported
+  const downloadRef = createRef(); 
   const [params] = useSearchParams();
   const [text, setText] = useState(0);
 
@@ -213,6 +213,7 @@ function Page() {
       </h1>
 
       <div
+        ref={downloadRef}
         style={{
           position: "relative",
           display: "inline-block",
@@ -225,7 +226,7 @@ function Page() {
           style={{ maxWidth: "100%" }}
         />
 
-        {/* Render ForEditing components */}
+        {/* ABIRRRRRR*/}
         <div
           style={{
             position: "absolute",
@@ -261,7 +262,7 @@ function Page() {
             borderColor: "#98971a",
             color: "#504945",
           }}
-          onClick={() => exportComponentAsJPEG(downloadRef)} // Trigger export on button click
+          onClick={() => exportComponentAsJPEG(downloadRef)}  
         >
           Download
         </Button>
