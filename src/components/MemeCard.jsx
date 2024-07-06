@@ -116,7 +116,7 @@ function MemeCard(props) {
   return (
     <Card
       style={{
-        width: "11rem",
+        width: "12rem",
         height: "13rem",
         borderRadius: "10px", // Border radius for the card
         border: "none",
