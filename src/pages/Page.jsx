@@ -69,7 +69,7 @@ function Page() {
             ctrl+ArrowDown for color picker
           </span>
         </p>
-        <span>Put the Text Only over the image</span>
+        <span>Put the Text Only over the image & click anywhere to exit edit mode</span>
       </div>
     </div>
   );
