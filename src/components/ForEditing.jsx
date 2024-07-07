@@ -218,6 +218,8 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Draggable from "react-draggable";
 import { CompactPicker, GithubPicker } from "react-color";
+import ThreeSixtyIcon from "@mui/icons-material/ThreeSixty";
+import FormatSizeIcon from "@mui/icons-material/FormatSize";
 import "../../src/App.css";
 
 function ForEditing({ style }) {
@@ -338,6 +340,15 @@ function ForEditing({ style }) {
         style={{ position: "fixed", bottom: "150px", right: "10px" }}
         onTouchStart={stopPropagation}
       >
+        <span>
+          <FormatSizeIcon
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.5)",
+              borderRadius: "10px",
+              padding: "5px",
+            }}
+          />
+        </span>{" "}
         <input
           type='range'
           min='17'
@@ -358,6 +369,15 @@ function ForEditing({ style }) {
         style={{ position: "fixed", bottom: "120px", right: "10px" }}
         onTouchStart={stopPropagation}
       >
+        <span>
+          <ThreeSixtyIcon
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.5)",
+              borderRadius: "10px",
+              padding: "5px",
+            }}
+          />
+        </span>
         <input
           type='range'
           min='-180'
