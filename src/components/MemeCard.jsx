@@ -118,12 +118,12 @@ function MemeCard(props) {
     <>
       <Card
         style={{
-          width: "195px ",
+          width: "180px ",
           height: "14rem",
           borderRadius: "3px",
           border: "none",
           margin: "6px",
-          backgroundColor: "#000000",
+          backgroundColor: "#363434",
           overflow: "hidden",
           position: "relative",
           padding: "10px",
