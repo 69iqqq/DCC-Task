@@ -2,10 +2,10 @@
   font-family: "Poppins";
 }
 .body {
-  background-color: #888;
+  background-color: #717593;
 }
 .App {
-  background-color: #fbf1c7;
+  background-color: #5a5e77;
   width: 100%;
   overflow: hidden;
 }
@@ -17,12 +17,12 @@
   font-size: 25px;
 }
 .header {
-  font-family: "Josefin Sans";
+  font-family: "Varela Round";
   font-size: 60px;
-  color: #fbf1c7;
+  color: #bd93f9;
   font-weight: bold;
   text-align: center;
   text-shadow: 4px;
-  text-shadow: 2px 2px 4px #a89984;
-background-color:#d5c4a1;
+  text-shadow: 4px 4px 4px #df8abaa4;
+background-color:#44475a;
 }

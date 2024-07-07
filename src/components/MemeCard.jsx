@@ -114,50 +114,53 @@ import EditIcon from "@mui/icons-material/Edit";
 function MemeCard(props) {
   const navigate = useNavigate();
   return (
-    <Card
-      style={{
-        width: "195px ",
-        height: "14rem",
-        borderRadius: "10px",
-        border: "none",
-        margin: "6px",
-        backgroundColor: "#bdae93",
-        overflow: "hidden",
-        position: "relative",
-        padding: "1px",
-      }}
-    >
-      <div style={{ position: "relative", width: "100%", height: "100%" }}>
-        <Card.Img
-          variant='top'
-          src={props.img}
-          style={{
-            width: "calc(100% - 20px)",
-            height: "calc(100% - 20px)",
-            objectFit: "cover",
-            borderRadius: "10px",
-            margin: "10px",
-          }}
-        />
-        <p
-          style={{
-            color: "#53514e",
-            position: "absolute",
-            bottom: "10px",
-            left: "50%",
-            transform: "translateX(90%)",
-            zIndex: 1,
-            cursor: "pointer",
-            backgroundColor: "rgba(255, 255, 255, 0.5)",
-            borderRadius: "10px",
-            padding: "5px",
-          }}
-          onClick={(e) => navigate(`/edit?url=${props.img}`)}
-        >
-          <EditIcon style={{ fontSize: "24px" }} />
-        </p>
-      </div>
-    </Card>
+    <>
+      <Card
+        style={{
+          width: "195px ",
+          height: "14rem",
+          borderRadius: "10px",
+          border: "none",
+          margin: "6px",
+          backgroundColor: "#717593",
+          overflow: "hidden",
+          position: "relative",
+          padding: "1px",
+        }}
+      >
+        <div style={{ position: "relative", width: "100%", height: "100%" }}>
+          <Card.Img
+            variant='top'
+            src={props.img}
+            style={{
+              width: "calc(100% - 20px)",
+              height: "calc(100% - 20px)",
+              objectFit: "cover",
+              borderRadius: "10px",
+              margin: "10px",
+            }}
+          />
+          <p
+            style={{
+              color: "#bd93f9",
+              position: "absolute",
+              bottom: "10px",
+              left: "50%",
+              transform: "translateX(90%)",
+              zIndex: 1,
+              cursor: "pointer",
+              backgroundColor: "rgba(155, 153, 153, 0.76)",
+              borderRadius: "10px",
+              padding: "5px",
+              boxShadow: "0px 3px 3px 3px #7c798086",
+            }}
+            onClick={(e) => navigate(`/edit?url=${props.img}`)}
+          >
+            <EditIcon style={{ fontSize: "24px" }} />
+          </p>
+        </div>
+      </Card>
+    </>
   );
 }
 

@@ -189,7 +189,7 @@
 // import { exportComponentAsJPEG } from "react-component-export-image";
 
 // function Page() {
-//   const downloadRef = createRef(); 
+//   const downloadRef = createRef();
 //   const [params] = useSearchParams();
 //   const [text, setText] = useState(0);
 
@@ -323,14 +323,14 @@ function Page() {
     <div
       style={{
         margin: "auto",
-        backgroundColor: "#fbf1c7",
+        // backgroundColor: "#fbf1c7",
         textAlign: "center",
       }}
     >
       <h1
         className='text-center'
         style={{
-          color: "#504945",
+          color: "#f8f8f2",
           marginTop: "40px",
           fontFamily: "LobJosefin Sansster",
         }}
@@ -376,10 +376,11 @@ function Page() {
       <div style={{ margin: "20px auto", maxWidth: "250px" }}>
         <Button
           style={{
-            backgroundColor: "#458588",
-            borderColor: "#458588",
+            backgroundColor: "#9afcb3",
+            borderColor: "#9afcb3",
             color: "#504945",
             marginRight: "10px",
+            boxShadow: "0px 4px 8px 8px rgba(168, 255, 183, 0.212)",
           }}
           onClick={addText}
         >
@@ -387,9 +388,10 @@ function Page() {
         </Button>
         <Button
           style={{
-            backgroundColor: "#98971a",
-            borderColor: "#98971a",
+            backgroundColor: "#bd93f9",
+            borderColor: "#bd93f9",
             color: "#504945",
+            boxShadow: "0px 4px 8px 8px #bd93f942",
           }}
           onClick={() => exportComponentAsJPEG(downloadRef)}
         >
@@ -397,15 +399,16 @@ function Page() {
         </Button>
       </div>
 
-      <p>
+      <p style={{ color: "#f8f8f2" }}>
         More than one text can be added and dragged anywhere on the image.
         <br />
         <span
           style={{
-            backgroundColor: "#d3869aa2",
+            // backgroundColor: "#ff79c6",
             padding: "2px 5px",
             borderRadius: "3px",
             fontFamily: "Poppins",
+            color: "#ff79c6",
           }}
         >
           Make sure that nothing overlays the image.
