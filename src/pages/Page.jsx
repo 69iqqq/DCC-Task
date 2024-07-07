@@ -337,7 +337,7 @@ function Page() {
           textShadow: "2px 2px 2px #161616a3",
         }}
       >
-        Homour Check
+        Humour Check
       </h1>
 
       <div
