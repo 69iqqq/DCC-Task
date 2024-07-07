@@ -3,11 +3,16 @@
 }
 .body {
   background-color: #717593;
+  
+}
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
 }
 .App {
   background-color: #5a5e77;
   width: 100%;
   overflow: hidden;
+  
 }
 .white-font-with-black-boundary {
   color: white;
@@ -16,7 +21,7 @@
     1px -1px 0 black;
   font-size: 25px;
 }
-.header {
+/* .header {
   font-family: "Varela Round";
   font-size: 60px;
   color: #bd93f9;
@@ -25,4 +30,19 @@
   text-shadow: 4px;
   text-shadow: 4px 4px 4px #df8abaa4;
 background-color:#44475a;
+} */
+.header {
+  font-family: "Varela Round";
+  font-size: 60px;
+  color: #bd93f9;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 4px 4px 4px #df8abaa4;
+  background-color: #666b8a;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 30px;
+  }
 }

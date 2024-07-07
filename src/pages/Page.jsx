@@ -355,7 +355,7 @@ function Page() {
           style={{
             maxWidth: "100%",
             width: "100%",
-            boxShadow: "4px 4px 4px 4px #bca6da6e",
+            boxShadow: "2px 2px 2px 2px #c8b3e130",
             borderRadius: "10px",
             marginBottom:"10px"
           }}
@@ -385,7 +385,7 @@ function Page() {
             borderColor: "#9afcb3",
             color: "#504945",
             marginRight: "10px",
-            boxShadow: "0px 2px 6px 6px rgba(168, 255, 183, 0.212)",
+            boxShadow: "2px 2px 2px 3px rgba(168, 255, 183, 0.212)",
             
           }}
           onClick={addText}
@@ -397,7 +397,7 @@ function Page() {
             backgroundColor: "#bd93f9",
             borderColor: "#bd93f9",
             color: "#504945",
-            boxShadow: "0px 2px 6px 6px #bd93f942",
+            boxShadow: "2px 2px 2px 3px #bd93f942",
           }}
           onClick={() => exportComponentAsJPEG(downloadRef)}
         >
