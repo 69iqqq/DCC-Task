@@ -333,6 +333,8 @@ function Page() {
           color: "#f8f8f2",
           marginTop: "40px",
           fontFamily: "LobJosefin Sansster",
+          fontWeight:"bold",
+          textShadow: "4px 4px 4px #df8abaa4",
         }}
       >
         Homour Check
@@ -353,6 +355,9 @@ function Page() {
           style={{
             maxWidth: "100%",
             width: "100%",
+            boxShadow: "4px 4px 4px 4px #bca6da6e",
+            borderRadius: "10px",
+            marginBottom:"10px"
           }}
         />
 
@@ -373,14 +378,15 @@ function Page() {
         </div>
       </div>
 
-      <div style={{ margin: "20px auto", maxWidth: "250px" }}>
+      <div style={{ margin: "20px auto", maxWidth: "250px", display:"flex", gap:"20px" }}>
         <Button
           style={{
             backgroundColor: "#9afcb3",
             borderColor: "#9afcb3",
             color: "#504945",
             marginRight: "10px",
-            boxShadow: "0px 4px 8px 8px rgba(168, 255, 183, 0.212)",
+            boxShadow: "0px 2px 6px 6px rgba(168, 255, 183, 0.212)",
+            
           }}
           onClick={addText}
         >
@@ -391,7 +397,7 @@ function Page() {
             backgroundColor: "#bd93f9",
             borderColor: "#bd93f9",
             color: "#504945",
-            boxShadow: "0px 4px 8px 8px #bd93f942",
+            boxShadow: "0px 2px 6px 6px #bd93f942",
           }}
           onClick={() => exportComponentAsJPEG(downloadRef)}
         >
