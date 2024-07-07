@@ -317,17 +317,15 @@ function ForEditing({ style }) {
     }
   }, []);
 
-  const handleSingleClick = () => {
-    setTimeout(() => {
-      if (!input) {
-        setInput(true);
-      }
-    }, 250); 
+  const handleSingleClick = (e) => {
+    if (e.detail === 2) { // Check for double click
+      setInput(true);
+    }
   };
 
   const handleTouchStart = (e) => {
     if (e.touches.length === 2) {
-      setInput(true); 
+      setInput(true);
     }
   };
 
