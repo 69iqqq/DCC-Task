@@ -416,7 +416,7 @@ function ForEditing({ style }) {
   const [input, setInput] = useState(false);
   const [text, setText] = useState("Click on Me to Edit");
   const [textColor, setTextColor] = useState("#000000");
-  const [fontSize, setFontSize] = useState(27);
+  const [fontSize, setFontSize] = useState(30);
   const [rotation, setRotation] = useState(0);
   const [colorPickerType, setColorPickerType] = useState("github"); 
 
@@ -552,7 +552,7 @@ function ForEditing({ style }) {
           style={{
             marginTop: "10px",
             marginBottom: "20px",
-            backgroundColor: "#689d61",
+            backgroundColor: "#d17ebf",
             borderRadius: "10px",
             cursor: "pointer",
             fontFamily: "Poppins",
@@ -583,7 +583,7 @@ function ForEditing({ style }) {
         <input
           type='range'
           min='17'
-          max='37'
+          max='60'
           step='2'
           value={fontSize}
           onChange={(e) => handleFontSizeChange(parseInt(e.target.value))}
