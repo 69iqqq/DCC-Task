@@ -138,6 +138,7 @@ function MemeCard(props) {
               objectFit: "cover",
               borderRadius: "10px",
               margin: "10px",
+              boxShadow: "3px 3px 3px 3px #bca6da6e",
             }}
           />
           <p
