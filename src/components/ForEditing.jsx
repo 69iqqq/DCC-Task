@@ -10,7 +10,7 @@ function ForEditing({ style }) {
   const [input, setInput] = useState(false);
   const [text, setText] = useState("Click on Me to Edit");
   const [textColor, setTextColor] = useState("#000000");
-  const [fontSize, setFontSize] = useState(30);
+  const [fontSize, setFontSize] = useState(50);
   const [rotation, setRotation] = useState(0); // State for rotation
   const [colorPickerType, setColorPickerType] = useState("github");
 

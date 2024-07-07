@@ -346,7 +346,7 @@ function Page() {
           position: "relative",
           display: "inline-block",
           marginTop: "20px",
-          maxWidth: isMobile ? "70%" : "90%",
+          maxWidth: isMobile ? "70%" : "60%",
         }}
       >
         <img
