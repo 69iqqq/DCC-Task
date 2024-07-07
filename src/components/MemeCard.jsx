@@ -121,10 +121,10 @@ function MemeCard(props) {
         borderRadius: "10px",
         border: "none",
         margin: "6px",
-        backgroundColor: "#7c6f64",
+        backgroundColor: "#bdae93",
         overflow: "hidden",
         position: "relative",
-        padding: "10px",
+        padding: "1px",
       }}
     >
       <div style={{ position: "relative", width: "100%", height: "100%" }}>
