@@ -2,7 +2,7 @@ function Header() {
   return (
     <div>
       {/* <img src='src/components/logo.png ' style={{ width: "50px" }} /> */}
-      <header className='header'>MEME MAYHEM</header>
+      <header className='header'style={{marginBottom:"10px"}}>meme mayhem</header>
       {/* <p
         style={{
           fontFamily: "Poppins",

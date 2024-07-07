@@ -193,7 +193,7 @@ export default function App() {
       <section className=''>
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
-            <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
+            <MDBCol md='3' lg='4' xl='3' className='mx-auto mt-4 mb-4'>
               {/* <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon icon='gem' className='me-3 mt-5' />
                 Genz Templates
@@ -206,7 +206,7 @@ export default function App() {
               </p>
             </MDBCol>
 
-            <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
+            <MDBCol md='2' lg='2' xl='2' className='mx-auto mt-4 mb-4'>
               <h6
                 className='text-uppercase fw-bold mb-4 mt-3'
                 style={{ color: "#f8f8f2" }}
@@ -238,7 +238,7 @@ export default function App() {
               </p>
             </MDBCol>
 
-            <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
+            <MDBCol md='3' lg='2' xl='2' className='mx-auto mt-4 mb-4'>
               <h6
                 style={{ color: "#f8f8f2" }}
                 className='text-uppercase fw-bold mb-4 mt-3'
@@ -261,7 +261,7 @@ export default function App() {
               md='4'
               lg='3'
               xl='3'
-              className='mx-auto mb-md-0 mb-4'
+              className='mx-auto mb-md-0 mb-4 mt-4'
               style={{ color: "#f8f8f2" }}
             >
               <h6 className='text-uppercase fw-bold mb-4 mt-3'>Contact</h6>
@@ -283,12 +283,14 @@ export default function App() {
 
       <div
         className='text-center p-4'
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+        style={{ backgroundColor: "rgba(255, 234, 234, 0.05)" , color:"white"}}
       >
         © 2024 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          69iqqq
-        </a>
+        <span style={{color:"white"}}>
+          <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+            69iqqq
+          </a>
+        </span>
       </div>
     </MDBFooter>
   );

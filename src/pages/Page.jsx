@@ -332,9 +332,9 @@ function Page() {
         style={{
           color: "#f8f8f2",
           marginTop: "40px",
-          fontFamily: "LobJosefin Sansster",
-          fontWeight:"bold",
-          textShadow: "4px 4px 4px #df8abaa4",
+          fontFamily: "Outfit",
+          fontWeight: "bold",
+          textShadow: "2px 2px 2px #161616a3",
         }}
       >
         Homour Check
@@ -346,7 +346,7 @@ function Page() {
           position: "relative",
           display: "inline-block",
           marginTop: "20px",
-          maxWidth: isMobile ? "90%" : "100%",
+          maxWidth: isMobile ? "70%" : "90%",
         }}
       >
         <img
@@ -355,9 +355,9 @@ function Page() {
           style={{
             maxWidth: "100%",
             width: "100%",
-            boxShadow: "2px 2px 2px 2px #c8b3e130",
-            borderRadius: "10px",
-            marginBottom:"10px"
+            boxShadow: "0px 3px 3px 3px #38363a1d",
+            borderRadius: "3px",
+            marginBottom: "10px",
           }}
         />
 
@@ -378,15 +378,23 @@ function Page() {
         </div>
       </div>
 
-      <div style={{ margin: "20px auto", maxWidth: "250px", display:"flex", gap:"20px" }}>
+      <div
+        style={{
+          margin: "20px auto",
+          maxWidth: "250px",
+          display: "flex",
+          gap: "20px",
+        }}
+      >
         <Button
           style={{
             backgroundColor: "#9afcb3",
             borderColor: "#9afcb3",
             color: "#504945",
             marginRight: "10px",
-            boxShadow: "2px 2px 2px 3px rgba(168, 255, 183, 0.212)",
-            
+            boxShadow: "2px 2px 2px 3px #0c0b0c21",
+            borderRadius: "3px",
+            fontWeight: "bold",
           }}
           onClick={addText}
         >
@@ -397,7 +405,9 @@ function Page() {
             backgroundColor: "#bd93f9",
             borderColor: "#bd93f9",
             color: "#504945",
-            boxShadow: "2px 2px 2px 3px #bd93f942",
+            boxShadow: "2px 2px 2px 3px #0c0b0c21",
+            borderRadius: "3px",
+            fontWeight: "bold",
           }}
           onClick={() => exportComponentAsJPEG(downloadRef)}
         >
