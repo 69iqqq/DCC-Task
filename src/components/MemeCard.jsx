@@ -116,11 +116,11 @@ function MemeCard(props) {
   return (
     <Card
       style={{
-        width: "12rem",
-        height: "13rem",
-        borderRadius: "10px", 
+        width: "195px ",
+        height: "14rem",
+        borderRadius: "10px",
         border: "none",
-        margin: "6px", 
+        margin: "6px",
         backgroundColor: "#7c6f64",
         overflow: "hidden",
         position: "relative",
@@ -132,24 +132,24 @@ function MemeCard(props) {
           variant='top'
           src={props.img}
           style={{
-            width: "calc(100% - 20px)", 
-            height: "calc(100% - 20px)", 
+            width: "calc(100% - 20px)",
+            height: "calc(100% - 20px)",
             objectFit: "cover",
-            borderRadius: "10px", 
-            margin: "10px", 
+            borderRadius: "10px",
+            margin: "10px",
           }}
         />
         <p
           style={{
-            color: "#83a598",
+            color: "#53514e",
             position: "absolute",
             bottom: "10px",
             left: "50%",
             transform: "translateX(90%)",
             zIndex: 1,
             cursor: "pointer",
-            backgroundColor: "rgba(89, 189, 172, 0.5)",
-            borderRadius: "50%", 
+            backgroundColor: "rgba(255, 255, 255, 0.5)",
+            borderRadius: "10px",
             padding: "5px",
           }}
           onClick={(e) => navigate(`/edit?url=${props.img}`)}
