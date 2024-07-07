@@ -416,7 +416,7 @@ function Page() {
       </div>
 
       <p style={{ color: "#f8f8f2" }}>
-        More than one text can be added and dragged anywhere on the image.
+        More than one text can be added and dragged anywhere on the image.Pinch to resize and rotate text
         <br />
         <span
           style={{
