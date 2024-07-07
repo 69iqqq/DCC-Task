@@ -149,6 +149,7 @@ function ForEditing({ style }) {
                   resize: "none",
                   transform: `rotate(${rotation}deg)`,
                   transformOrigin: "center",
+                  position: "absolute",
                 }}
               />
             </div>
@@ -162,6 +163,7 @@ function ForEditing({ style }) {
                 transform: `rotate(${rotation}deg)`,
                 transformOrigin: "center",
                 display: "inline-block",
+                position: "absolute",
               }}
               onClick={enterEditMode}
               onTouchStart={handleTouchStart}
