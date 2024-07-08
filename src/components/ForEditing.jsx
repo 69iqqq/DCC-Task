@@ -554,13 +554,13 @@
 
 // export default ForEditing;
 
-
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Draggable from "react-draggable";
 import { CompactPicker, GithubPicker } from "react-color";
 import ThreeSixtyIcon from "@mui/icons-material/ThreeSixty";
 import FormatSizeIcon from "@mui/icons-material/FormatSize";
 import ChangeCircleOutlinedIcon from "@mui/icons-material/ChangeCircleOutlined";
+import { Slider } from "@mui/material"; // Import Slider from Material-UI
 import "../../src/App.css";
 
 function ForEditing({ style }) {
@@ -616,11 +616,11 @@ function ForEditing({ style }) {
     setTextColor(color.hex);
   };
 
-  const handleFontSizeChange = (value) => {
+  const handleFontSizeChange = (event, value) => {
     setFontSize(value);
   };
 
-  const handleRotationChange = (value) => {
+  const handleRotationChange = (event, value) => {
     setRotation(value);
   };
 
@@ -786,30 +786,29 @@ function ForEditing({ style }) {
           bottom: "150px",
           right: "10px",
           zIndex: "999",
+          alignItems: "center",
+          display: "flex",
+          gap: "3px",
+          marginBottom: "20px",
         }}
         onTouchStart={stopPropagation}
       >
-        <span>
-          <FormatSizeIcon
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.5)",
-              borderRadius: "10px",
-              padding: "5px",
-            }}
-          />
-        </span>{" "}
-        <input
-          type='range'
-          min='17'
-          max='60'
-          step='2'
+        <FormatSizeIcon
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.5)",
+            borderRadius: "10px",
+            padding: "5px",
+          }}
+        />
+        <Slider
           value={fontSize}
-          onChange={(e) => handleFontSizeChange(parseInt(e.target.value))}
+          min={5}
+          max={70}
+          step={2}
+          onChange={handleFontSizeChange}
           style={{
             marginLeft: "10px",
-            backgroundColor: "#8B4513",
             borderRadius: "5px",
-            outline: "none",
             width: "200px",
           }}
         />
@@ -820,30 +819,29 @@ function ForEditing({ style }) {
           bottom: "120px",
           right: "10px",
           zIndex: "999",
+          alignItems: "center",
+          display: "flex",
+          gap: "3px",
         }}
         onTouchStart={stopPropagation}
       >
-        <span>
-          <ThreeSixtyIcon
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.5)",
-              borderRadius: "10px",
-              padding: "5px",
-            }}
-          />
-        </span>
-        <input
-          type='range'
-          min='0'
-          max='360'
-          step='1'
+        <ThreeSixtyIcon
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.5)",
+            borderRadius: "10px",
+            padding: "5px",
+            marginBottom: "25px",
+          }}
+        />
+        <Slider
           value={rotation}
-          onChange={(e) => handleRotationChange(parseInt(e.target.value))}
+          min={0}
+          max={360}
+          step={1}
+          onChange={handleRotationChange}
           style={{
             marginLeft: "10px",
-            backgroundColor: "#8B4513",
             borderRadius: "5px",
-            outline: "none",
             width: "200px",
           }}
         />
