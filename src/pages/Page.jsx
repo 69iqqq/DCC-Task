@@ -365,6 +365,7 @@ function Page() {
           color: "#f8f8f2",
           fontFamily: "Outfit",
           fontWeight: "bold",
+          marginTop:"20px"
         }}
       >
         Humour Check
@@ -383,7 +384,7 @@ function Page() {
           ref={downloadRef}
           style={{
             maxWidth: selectedSize,
-            width: "100%",
+            width: "97.3%",
             position: "relative",
           }}
         >
@@ -394,7 +395,6 @@ function Page() {
               maxWidth: "100%",
               width: "100%",
               boxShadow: "0px 3px 3px 3px #38363a1d",
-              borderRadius: "3px",
               marginBottom: "10px",
             }}
           />
@@ -405,7 +405,7 @@ function Page() {
               top: 0,
               left: 0,
               width: "100%",
-              height: "97.3%",
+              height: "100%",
             }}
           >
             {Array(text)
