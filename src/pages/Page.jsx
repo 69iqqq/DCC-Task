@@ -1,301 +1,163 @@
-// import { useState, createRef } from "react";
-// import { Button } from "react-bootstrap";
-// import { useSearchParams } from "react-router-dom";
-// import ForEditing from "../components/ForEditing";
-// import { exportComponentAsJPEG } from "react-component-export-image";
-// function Page() {
-//   const downloadRef = createRef();
-//   const [params] = useSearchParams();
-//   const [text, setText] = useState(0);
-//   const addText = () => {
-//     setText(text + 1);
-//   };
-//   return (
-//     <div style={{ margin: "auto", backgroundColor: "#fbf1c7" }}>
-//       <h1
-//         className='text-center'
-//         style={{ color: "#504945", marginTop: "50px" }}
-//       >
-//         Show Your Humor By Editing The Template
-//       </h1>
-//       <div
-//         ref={downloadRef}
-//         style={{ width: "257px", margin: "auto" }}
-//         className='meme mt-5 mb-5'
-//       >
-//         <img src={params.get("url")} width='250px' />
-//         <div>
-//           {Array(text)
-//             .fill(0)
-//             .map((e) => (
-//               <ForEditing  key={e.index} />
-//             ))}
-//         </div>
-//       </div>
-
-//       <div
-//         style={{
-//           display: "flex",
-//           justifyContent: "center",
-//           gap: "10px",
-//           marginBottom: "50px",
-//         }}
-//       >
-//         <Button
-//           style={{
-//             backgroundColor: "#458588",
-//             borderColor: "#458588",
-//             color: "#504945",
-//           }}
-//           onClick={addText}
-//         >
-//           Add Text
-//         </Button>
-//         <Button
-//           style={{
-//             backgroundColor: "#98971a",
-//             borderColor: "#98971a",
-//             color: "#504945",
-//           }}
-//           onClick={() => exportComponentAsJPEG(downloadRef)}
-//         >
-//           Download
-//         </Button>
-//       </div>
-//       <div style={{ textAlign: "center" }}>
-//         <p>
-//           More than One text can be added and dragged any where in the image &{" "}
-//           <span style={{ backgroundColor: "#d3869b" }}>
-//             ctrl+ArrowDown for color picker
-//           </span>
-//         </p>
-//         <span>Put the Text Only over the image & click anywhere to exit edit mode</span>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Page;
-// import React, { useState, createRef } from "react";
-// import { Button } from "react-bootstrap";
-// import { useSearchParams } from "react-router-dom";
-// import ForEditing from "../components/ForEditing";
-// import { exportComponentAsJPEG } from "react-component-export-image";
-
-// function Page() {
-//   const downloadRef = createRef();
-//   const [params] = useSearchParams();
-//   const [text, setText] = useState(0);
-
-//   const addText = () => {
-//     setText(text + 1);
-//   };
-
-//   return (
-//     <div
-//       style={{
-//         margin: "auto",
-//         backgroundColor: "#fbf1c7",
-//         textAlign: "center",
-//       }}
-//     >
-//       <h1
-//         className='text-center'
-//         style={{ color: "#504945", marginTop: "50px" }}
-//       >
-//         Show Your Humor By Editing The Template
-//       </h1>
-
-//       <div
-//         style={{
-//           position: "relative",
-//           display: "inline-block",
-//           marginTop: "20px",
-//         }}
-//       >
-//         <img
-//           src={params.get("url")}
-//           alt='Meme Template'
-//           style={{ maxWidth: "100%" }}
-//         />
-
-//         {/* Render ForEditing components */}
-//         <div
-//           style={{
-//             position: "absolute",
-//             top: 0,
-//             left: 0,
-//             width: "100%",
-//             height: "100%",
-//           }}
-//         >
-//           {Array(text)
-//             .fill(0)
-//             .map((_, index) => (
-//               <ForEditing key={index} style={{ position: "absolute" }} />
-//             ))}
-//         </div>
-//       </div>
-
-//       <div style={{ margin: "20px auto", maxWidth: "250px" }}>
-//         <Button
-//           style={{
-//             backgroundColor: "#458588",
-//             borderColor: "#458588",
-//             color: "#504945",
-//             marginRight: "10px",
-//           }}
-//           onClick={addText}
-//         >
-//           Add Text
-//         </Button>
-//         <Button
-//           style={{
-//             backgroundColor: "#98971a",
-//             borderColor: "#98971a",
-//             color: "#504945",
-//           }}
-//           onClick={() => exportComponentAsJPEG(downloadRef)}
-//         >
-//           Download
-//         </Button>
-//       </div>
-
-//       <p>
-//         More than one text can be added and dragged anywhere on the image.
-//         <br />
-//         Use{" "}
-//         <span
-//           style={{
-//             backgroundColor: "#d3869b",
-//             padding: "2px 5px",
-//             borderRadius: "3px",
-//           }}
-//         >
-//           ctrl+ArrowDown
-//         </span>{" "}
-//         for the color picker.
-//       </p>
-//     </div>
-//   );
-// }
-
-// export default Page;
-// ==========================================================
-// import React, { useState, createRef } from "react";
-// import { Button } from "react-bootstrap";
-// import { useSearchParams } from "react-router-dom";
-// import ForEditing from "../components/ForEditing";
-// import { exportComponentAsJPEG } from "react-component-export-image";
-
-// function Page() {
-//   const downloadRef = createRef();
-//   const [params] = useSearchParams();
-//   const [text, setText] = useState(0);
-
-//   const addText = () => {
-//     setText(text + 1);
-//   };
-
-//   return (
-//     <div
-//       style={{
-//         margin: "auto",
-//         backgroundColor: "#fbf1c7",
-//         textAlign: "center",
-//       }}
-//     >
-//       <h1
-//         className='text-center'
-//         style={{ color: "#504945", marginTop: "50px" }}
-//       >
-//         Show Your Humor By Editing The Template
-//       </h1>
-
-//       <div
-//         ref={downloadRef}
-//         style={{
-//           position: "relative",
-//           display: "inline-block",
-//           marginTop: "20px",
-//         }}
-//       >
-//         <img
-//           src={params.get("url")}
-//           alt='Meme Template'
-//           style={{ maxWidth: "100%" }}
-//         />
-
-//         {/* ABIRRRRRR*/}
-//         <div
-//           style={{
-//             position: "absolute",
-//             top: 0,
-//             left: 0,
-//             width: "100%",
-//             height: "100%",
-//           }}
-//         >
-//           {Array(text)
-//             .fill(0)
-//             .map((_, index) => (
-//               <ForEditing key={index} style={{ position: "absolute" }} />
-//             ))}
-//         </div>
-//       </div>
-
-//       <div style={{ margin: "20px auto", maxWidth: "250px" }}>
-//         <Button
-//           style={{
-//             backgroundColor: "#458588",
-//             borderColor: "#458588",
-//             color: "#504945",
-//             marginRight: "10px",
-//           }}
-//           onClick={addText}
-//         >
-//           Add Text
-//         </Button>
-//         <Button
-//           style={{
-//             backgroundColor: "#98971a",
-//             borderColor: "#98971a",
-//             color: "#504945",
-//           }}
-//           onClick={() => exportComponentAsJPEG(downloadRef)}
-//         >
-//           Download
-//         </Button>
-//       </div>
-
-//       <p>
-//         More than one text can be added and dragged anywhere on the image.
-//         <br />
-//         <span
-//           style={{
-//             backgroundColor: "#d3869b",
-//             padding: "2px 5px",
-//             borderRadius: "3px",
-//           }}
-//         >
-//           Make sure that nothing overlays the image because it is using useRef
-//           to download <br/> the meme. If something overlays it, it will also get
-//           downloaded, being overlaid.
-//         </span>{" "}
-//       </p>
-//     </div>
-//   );
-// }
-
-// export default Page;
 // ===================================================================
 // ==================================================================
 
+// import React, { useState, createRef, useEffect } from "react";
+// import { useSearchParams } from "react-router-dom";
+// import ForEditing from "../components/ForEditing";
+// import { exportComponentAsJPEG } from "react-component-export-image";
+
+// import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
+
+// function Page() {
+//   const downloadRef = createRef();
+//   const [params] = useSearchParams();
+//   const [text, setText] = useState(0);
+//   const [isMobile, setIsMobile] = useState(false);
+
+//   const addText = () => {
+//     setText(text + 1);
+//   };
+
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setIsMobile(window.innerWidth <= 768);
+//     };
+
+//     handleResize();
+//     window.addEventListener("resize", handleResize);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//     };
+//   }, []);
+
+//   return (
+//     <div
+//       style={{
+//         margin: "auto",
+//         // backgroundColor: "#fbf1c7",
+//         textAlign: "center",
+//       }}
+//     >
+//       <h1
+//         className='text-center'
+//         style={{
+//           color: "#f8f8f2",
+//           marginTop: "40px",
+//           fontFamily: "Outfit",
+//           fontWeight: "bold",
+//           textShadow: "2px 2px 2px #161616a3",
+//         }}
+//       >
+//         Humour Check
+//       </h1>
+
+//       <div
+//         ref={downloadRef}
+//         style={{
+//           position: "relative",
+//           display: "inline-block",
+//           marginTop: "20px",
+//           maxWidth: isMobile ? "70%" : "60%",
+//         }}
+//       >
+//         <img
+//           src={params.get("url")}
+//           alt='Meme Template'
+//           style={{
+//             maxWidth: "100%",
+//             width: "100%",
+//             boxShadow: "0px 3px 3px 3px #38363a1d",
+//             borderRadius: "3px",
+//             marginBottom: "10px",
+//           }}
+//         />
+
+//         <div
+//           style={{
+//             position: "absolute",
+//             top: 0,
+//             left: 0,
+//             width: "100%",
+//             height: "100%",
+//           }}
+//         >
+//           {Array(text)
+//             .fill(0)
+//             .map((_, index) => (
+//               <ForEditing key={index} style={{ position: "absolute" }} />
+//             ))}
+//         </div>
+//       </div>
+
+//       <div
+//         style={{
+//           margin: "20px auto",
+//           maxWidth: "300px",
+//           display: "flex",
+//           gap: "140px",
+//           backgroundColor: "black",
+//           alignintem: "center",
+//           justifyContent: "center",
+//           cursor: "pointer",
+//           padding: "4px 4px",
+//         }}
+//       >
+//         <span
+//           style={{
+//             // backgroundColor: "#9afcb3",
+//             // borderColor: "#9afcb3",
+//             color: "#ffffff",
+//             marginRight: "10px",
+//             fontWeight: "bold",
+//             // marginTop: "13px",
+//           }}
+//           onClick={addText}
+//         >
+//           <span style={{ fontSize: "18px", fontFamily: "Baskervville SC" }}>
+//             {" "}
+//             T{" "}
+//           </span>
+//         </span>
+//         <span
+//           style={{
+//             // backgroundColor: "#d9d3e00",
+//             // borderColor: "#ebdcff0",
+//             color: "#ffff",
+//             fontWeight: "bold",
+//             // marginTop: "13px",
+//           }}
+//           onClick={() => exportComponentAsJPEG(downloadRef)}
+//         >
+//           <DownloadOutlinedIcon />
+//         </span>
+//       </div>
+
+//       <p style={{ color: "#f8f8f2" }}>
+//         For mobile 2finger tap on the text to edit. Pinch to resize and rotate
+//         text
+//         <br />
+//         <span
+//           style={{
+//             // backgroundColor: "#ff79c6",
+//             padding: "2px 5px",
+//             borderRadius: "3px",
+//             fontFamily: "Poppins",
+//             color: "#ff79c6",
+//           }}
+//         >
+//           Make sure that nothing overlays the image.
+//         </span>
+//       </p>
+//     </div>
+//   );
+// }
+
+// export default Page;
 import React, { useState, createRef, useEffect } from "react";
-import { Button } from "react-bootstrap";
 import { useSearchParams } from "react-router-dom";
 import ForEditing from "../components/ForEditing";
 import { exportComponentAsJPEG } from "react-component-export-image";
+import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 
 function Page() {
   const downloadRef = createRef();
@@ -323,7 +185,6 @@ function Page() {
     <div
       style={{
         margin: "auto",
-        // backgroundColor: "#fbf1c7",
         textAlign: "center",
       }}
     >
@@ -331,96 +192,105 @@ function Page() {
         className='text-center'
         style={{
           color: "#f8f8f2",
-          marginTop: "40px",
+          // marginTop: "40px",
           fontFamily: "Outfit",
           fontWeight: "bold",
-          textShadow: "2px 2px 2px #161616a3",
         }}
       >
         Humour Check
       </h1>
 
       <div
-        ref={downloadRef}
         style={{
-          position: "relative",
-          display: "inline-block",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
           marginTop: "20px",
-          maxWidth: isMobile ? "70%" : "60%",
+          marginBottom:"10px"
         }}
       >
-        <img
-          src={params.get("url")}
-          alt='Meme Template'
+        <div
+          ref={downloadRef}
           style={{
-            maxWidth: "100%",
-            width: "100%",
-            boxShadow: "0px 3px 3px 3px #38363a1d",
-            borderRadius: "3px",
-            marginBottom: "10px",
+            maxWidth: isMobile ? "70%" : "50%",
+            position: "relative",
           }}
-        />
+        >
+          <img
+            src={params.get("url")}
+            alt='Meme Template'
+            style={{
+              maxWidth: "100%",
+              width: "100%",
+              boxShadow: "0px 3px 3px 3px #38363a1d",
+              borderRadius: "3px",
+              marginBottom: "10px",
+            }}
+          />
+
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "97.3%",
+            }}
+          >
+            {Array(text)
+              .fill(0)
+              .map((_, index) => (
+                <ForEditing key={index} style={{ position: "absolute" }} />
+              ))}
+          </div>
+        </div>
 
         <div
           style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
+            maxWidth: "300px",
+            marginLeft: "20px", // Space between image and buttons
+            display: "flex",
+            flexDirection: "column", // Align buttons vertically
+            alignItems: "center", // Center horizontally
+            gap: "20px", // Vertical space between buttons
           }}
         >
-          {Array(text)
-            .fill(0)
-            .map((_, index) => (
-              <ForEditing key={index} style={{ position: "absolute" }} />
-            ))}
+          <span
+            style={{
+              color: "#ffffff",
+              fontWeight: "bold",
+              cursor: "pointer",
+            }}
+            onClick={addText}
+          >
+            <span
+              style={{
+                fontSize: "18px",
+                fontFamily: "Baskervville SC",
+              }}
+            >
+              T
+            </span>
+          </span>
+          <span
+            style={{
+              color: "#ffffff",
+              fontWeight: "bold",
+              cursor: "pointer",
+            }}
+            onClick={() => exportComponentAsJPEG(downloadRef)}
+          >
+            <DownloadOutlinedIcon />
+          </span>
         </div>
       </div>
 
-      <div
-        style={{
-          margin: "20px auto",
-          maxWidth: "250px",
-          display: "flex",
-          gap: "20px",
-        }}
-      >
-        <Button
-          style={{
-            backgroundColor: "#9afcb3",
-            borderColor: "#9afcb3",
-            color: "#504945",
-            marginRight: "10px",
-            boxShadow: "2px 2px 2px 3px #0c0b0c21",
-            borderRadius: "3px",
-            fontWeight: "bold",
-          }}
-          onClick={addText}
-        >
-          Add Text
-        </Button>
-        <Button
-          style={{
-            backgroundColor: "#bd93f9",
-            borderColor: "#bd93f9",
-            color: "#504945",
-            boxShadow: "2px 2px 2px 3px #0c0b0c21",
-            borderRadius: "3px",
-            fontWeight: "bold",
-          }}
-          onClick={() => exportComponentAsJPEG(downloadRef)}
-        >
-          Download
-        </Button>
-      </div>
-
       <p style={{ color: "#f8f8f2" }}>
-        For mobile 2finger tap on the text to edit. Pinch to resize and rotate text
+        For mobile 2-finger tap on the text to edit. Pinch to resize and rotate
+        text
         <br />
         <span
           style={{
-            // backgroundColor: "#ff79c6",
             padding: "2px 5px",
             borderRadius: "3px",
             fontFamily: "Poppins",
