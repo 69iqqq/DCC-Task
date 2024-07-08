@@ -1,3 +1,4 @@
+
 # Meme Mayhem
 
 Welcome to Meme Mayhem, a web application that empowers users to create and customize memes effortlessly using a wide array of templates.
@@ -51,26 +52,24 @@ Ensure you have Node.js and npm installed on your development environment.
    ```bash
    git clone https://github.com/yourusername/meme-mayhem.git
    cd meme-mayhem
-   npm start
    meme-mayhem/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Header.js
-│   │   ├── MemeCard.js
-│   │   ├── ForEditing.js
-│   │   └── Footer.js
-│   ├── pages/
-│   │   ├── Home.js
-│   │   ├── Pages.jsx
-│   │   └── ...
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-├── .gitignore
-├── package.json
-└── README.md
+   ├── public/
+   │   └── index.html
+   ├── src/
+   │   ├── components/
+   │   │   ├── Header.js
+   │   │   ├── MemeCard.js
+   │   │   ├── ForEditing.js
+   │   │   └── Footer.js
+   │   ├── pages/
+   │   │   ├── Home.js
+   │   │   ├── Pages.jsx
+   │   │   └── ...
+   │   └── ...
+   ├── package.json
+   └── README.md
+
+
 Contributing
 Contributions to Meme Mayhem are welcome! If you have suggestions for new features, improvements to existing ones, or find bugs that need fixing, please feel free to open an issue or submit a pull request.
 
@@ -81,4 +80,4 @@ Acknowledgments
 Special thanks to Material-UI and React Bootstrap for providing essential UI components that enhance the usability and aesthetic appeal of Meme Mayhem.
 
 
-Adjust placeholders like `[http://localhost:3000](http://localhost:3000)`, `[yourusername]`, `[Your Name]`, `[your-email@example.com]`, and others with your actual project details. This detailed template includes sections on project overview, features, technologies used, installation instructions, folder structure, contribution guidelines, license information, acknowledgments, and contact details.
+
