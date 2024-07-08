@@ -12,7 +12,10 @@ const Home = function () {
   return (
     <>
     < Header/>
-    <div style={{ backgroundColor: "#5a5e77" }}>
+      <div style={{
+        // backgroundColor: "#5a5e77"
+      
+     }}>
       <div className='row'>
         {meme.map((el) => (
           <MemeCard img={el.blank} key={el.id} title={el.title} />

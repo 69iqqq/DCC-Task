@@ -28,7 +28,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Page from "./pages/Page";
 import Footer from "./components/Footer";
-import Footer2 from "./components/Footer2"; // Import Footer2 component
+import Footer2 from "./components/Footer2"; 
+// import Header from "./components/Header";  
 import "./App.css";
 
 function App() {
@@ -36,13 +37,13 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      setIsMobile(window.innerWidth <= 768); 
     };
 
-    handleResize(); // Check the screen size on initial render
+    handleResize(); 
 
-    window.addEventListener("resize", handleResize); // Add resize event listener
-    return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
+    window.addEventListener("resize", handleResize); 
+    return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
   return (
@@ -54,7 +55,6 @@ function App() {
           <Route path='/edit' element={<Page />} />
         </Routes>
         {isMobile ? <Footer2 /> : <Footer />}{" "}
-        {/* Conditionally render Footer or Footer2 */}
       </div>
     </div>
   );

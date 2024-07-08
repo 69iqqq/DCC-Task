@@ -2,14 +2,14 @@
   font-family: "Poppins";
 }
 .body {
-  background-color: #717593;
+  /* background-color: #717593; */
   
 }
 body::-webkit-scrollbar {
   display: none; /* Hide scrollbar for WebKit browsers */
 }
 .App {
-  background-color: #5a5e77;
+  /* background-color: #5a5e77; */
   width: 100%;
   overflow: hidden;
   
@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
   text-shadow: 4px 4px 4px #df8abaa4;
 background-color:#44475a;
 } */
-.header {
+/* .header {
   font-family: "Raleway";
   font-size: 60px;
   color: #cfb4f5;
@@ -39,10 +39,39 @@ background-color:#44475a;
   text-align: center;
   text-shadow: 4px 4px 4px #272627a4;
   background-color: #666b8a;
-}
+} */
 
 @media (max-width: 768px) {
   .header {
     font-size: 30px;
+  }
+}
+.meme-card {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .meme-card {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .meme-card {
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 992px) {
+  .meme-card {
+    max-width: 240px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .meme-card {
+    max-width: 260px;
   }
 }
