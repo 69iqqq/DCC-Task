@@ -565,7 +565,7 @@ import "../../src/App.css";
 
 function ForEditing({ style }) {
   const [input, setInput] = useState(false);
-  const [text, setText] = useState("To figer Tap or Click(PC)");
+  const [text, setText] = useState("Two finger Tap or Click(PC)");
   const [textColor, setTextColor] = useState("#000000");
   const [fontSize, setFontSize] = useState(35); // Default font size
   const [rotation, setRotation] = useState(0); // State for rotation
