@@ -12,7 +12,7 @@ function Page() {
   const [params] = useSearchParams();
   const [text, setText] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
-  const [selectedSize, setSelectedSize] = useState("50%");
+  const [selectedSize, setSelectedSize] = useState("80%");
 
   const sizeOptions = [
     { id: "50%", label: "50%" },
@@ -34,7 +34,6 @@ function Page() {
   };
 
   useEffect(() => {
-    // Ensure the page starts at the top when navigating
     window.scrollTo(0, 0);
 
     const handleResize = () => {
@@ -55,22 +54,22 @@ function Page() {
         textAlign: "center",
         backgroundColor: "#20202c",
         width: "100%",
-        minHeight: "100vh", // Ensure full page height
+        minHeight: "100vh", 
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center", // Center content vertically
+        justifyContent: "center", 
         alignItems: "center",
-        position: "relative", // Position relative for absolute positioning of children
+        position: "relative", 
       }}
     >
       <div
         style={{
-          position: "fixed", // Fixed position for toolbar
-          top: 0, // Stick to the top of the viewport
-          width: "100%", // Ensure full width
-          zIndex: 1000, // Ensure it's above other content
-          padding: "10px", // Add padding for spacing
-          boxSizing: "border-box", // Include padding in width calculations
+          position: "fixed", 
+          top: 0, 
+          width: "100%",
+          zIndex: 1000, 
+          padding: "10px", 
+          boxSizing: "border-box", 
         }}
       >
         <div
