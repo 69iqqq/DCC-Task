@@ -446,7 +446,7 @@ function Page() {
       <div
         style={{
           backgroundColor: "#17171b",
-          minHeight: "100vh",
+          minHeight: "200vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -546,6 +546,9 @@ function Page() {
               width: "100%",
               position: "relative",
               zIndex: 1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent:"center"
             }}
           >
             <img
@@ -553,7 +556,7 @@ function Page() {
               alt='Meme Template'
               style={{
                 maxWidth: "100%",
-                width: "100%",
+                width: "70%",
                 boxShadow: "0px 3px 3px 3px #38363a1d",
                 marginBottom: "10px",
               }}
