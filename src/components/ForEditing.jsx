@@ -145,7 +145,7 @@ function ForEditing({ style }) {
     <div onTouchStart={handlePinchStart} onTouchMove={handlePinchMove}>
       <Draggable>
         <div
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer",}}
           onClick={handleSingleClick}
           onTouchStart={handleTouchStart}
         >

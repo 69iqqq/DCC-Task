@@ -21,13 +21,6 @@ Tailor meme templates to your liking by adding text, resizing elements, and adju
 
 Enjoy a consistent user experience across devices, from desktop computers to smartphones. Meme Mayhem is optimized to adapt seamlessly to different screen sizes, ensuring accessibility and usability for all users.
 
-### User Authentication (Optional)
-
-For enhanced functionality, consider implementing user authentication. This feature enables users to save their customized memes, revisit their creations, and share them directly from their accounts.
-
-### Social Sharing
-
-Share your creations effortlessly on social media platforms like Facebook, Twitter, and Instagram. Each meme can be downloaded locally or shared directly to social networks, amplifying its reach and impact.
 
 ## Technologies Used
 
