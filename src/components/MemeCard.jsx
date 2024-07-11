@@ -135,7 +135,7 @@ function MemeCard(props) {
   const getWidth = () => {
     
     if (window.innerWidth < 768) {
-      return "160px";
+      return "150px";
     } else {
       return "200px"; 
     }
