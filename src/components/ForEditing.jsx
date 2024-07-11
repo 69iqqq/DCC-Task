@@ -265,6 +265,7 @@ function ForEditing({ style }) {
                     borderRadius: "10px",
                     padding: "5px",
                     marginRight: "10px",
+                    marginBottom: "20px",
                   }}
                 />
                 <Slider
@@ -277,6 +278,7 @@ function ForEditing({ style }) {
                     marginLeft: "10px",
                     borderRadius: "5px",
                     width: "200px",
+                    marginBottom: "20px",
                   }}
                 />
               </div>
@@ -366,7 +368,6 @@ function ForEditing({ style }) {
                     marginLeft: "10px",
                     borderRadius: "5px",
                     width: "200px",
-                    
                   }}
                 />
               </div>
