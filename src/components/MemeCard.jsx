@@ -135,9 +135,9 @@ function MemeCard(props) {
   const getWidth = () => {
     
     if (window.innerWidth < 768) {
-      return "150px";
+      return "170px";
     } else {
-      return "200px"; 
+      return "210px"; 
     }
   };
 
@@ -146,13 +146,13 @@ function MemeCard(props) {
       style={{
         display: "inline-block",
         textAlign: "center",
-        margin: "10px",
+        marginBottom: "10px",
         width: getWidth(), 
       }}
     >
       <Card
         style={{
-          width: "100%",
+          width: "auto",
           height: "auto",
           borderRadius: "3px",
           border: "none",
