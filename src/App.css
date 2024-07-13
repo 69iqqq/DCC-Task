@@ -9,7 +9,7 @@
   
 }
 body::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for WebKit browsers */
+  display: none; 
 }
 .App {
   /* background-color: #1f2027; */
