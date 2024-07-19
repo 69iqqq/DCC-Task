@@ -15,14 +15,14 @@ function Page() {
   const [selectedSize, setSelectedSize] = useState("80%");
 
   const sizeOptions = [
+    { id: "30%", label: "30%" },
+    { id: "40%", label: "40%" },
     { id: "50%", label: "50%" },
     { id: "60%", label: "60%" },
     { id: "70%", label: "70%" },
     { id: "80%", label: "80%" },
     { id: "90%", label: "90%" },
     { id: "100%", label: "100%" },
-    { id: "110%", label: "110%" },
-    { id: "120%", label: "120%" },
   ];
 
   const setSize = (event) => {
@@ -155,7 +155,7 @@ function Page() {
         >
           <img
             src={params.get("url")}
-            alt='Meme Template'
+            alt="Meme Template"
             style={{
               maxWidth: "100%",
               width: "100%",

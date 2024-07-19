@@ -1,4 +1,4 @@
 export const getTemplates = async () => {
-  const response = await fetch("https://api.memegen.link/templates/");
+  const response = await fetch("");
   return await response.json();
 };
