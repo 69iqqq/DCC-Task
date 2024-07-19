@@ -1,4 +1,4 @@
 export const getTemplates = async () => {
-  const response = await fetch("");
+  const response = await fetch("git");
   return await response.json();
 };
