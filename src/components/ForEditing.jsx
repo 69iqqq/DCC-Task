@@ -18,7 +18,7 @@ function ForEditing({ style }) {
   const [showTools, setShowTools] = useState(!isMobile);
 
   const inputRef = useRef(null);
-  const initialDistanceRef = useRef(null);
+  const initialDistanceRef = useRef(null); 
   const initialAngleRef = useRef(null);
 
   const enterEditMode = () => {

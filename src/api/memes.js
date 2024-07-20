@@ -1,4 +1,4 @@
 export const getTemplates = async () => {
-  const response = await fetch("git");
+  const response = await fetch("https://api.memegen.link/templates/");
   return await response.json();
 };
